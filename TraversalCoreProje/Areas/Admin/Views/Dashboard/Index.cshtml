@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+
+    @await Component.InvokeAsync("_DashboardBanner")
+
+    @await Component.InvokeAsync("_Cards1Statistic")
+
+    @await Component.InvokeAsync("_TotalRevenue")
+
+    @await Component.InvokeAsync("_Cards2Statistic")
+
+</div>
+<div class="row">
+
+    @await Component.InvokeAsync("_DestinationStatistic")
+
+    @await Component.InvokeAsync("_DestinationStatistic2")
+
+    @await Component.InvokeAsync("_AdminGuideList")
+
+</div>
+                   
+
+    
+    <!-- Vendors JS -->
+    <script src="~/sneat-1.0.0/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+
+    <!-- Page JS -->
+    <script src="~/sneat-1.0.0/assets/js/dashboards-analytics.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
