@@ -19,7 +19,7 @@ namespace TraversalCoreProje.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var values = _contactUsService.TGetList();
+            var values = _contactUsService.TGetListContactUsByTrue();
             return View(values);
         }
     }
