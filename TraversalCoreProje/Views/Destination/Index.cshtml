@@ -7,18 +7,7 @@
 <!doctype html>
 <html lang="zxx">
 <body>
-    <!-- about breadcrumb -->
-    <section class="w3l-about-breadcrumb text-left">
-        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
-            <div class="container">
-                <h2 class="title">Rotalar </h2>
-                <ul class="breadcrumbs-custom-path mt-2">
-                    <li><a href="/Default/Index/">Ana Sayfa</a></li>
-                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Rotalar </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+
     <!-- //about breadcrumb -->
     <!--  Work gallery section -->
     <section class="grids-1 py-5">
@@ -30,9 +19,10 @@
                     {
                         <div class="col-lg-4 col-md-4 col-6">
                             <div class="column">
-                                <a href="/Destination/DestinationDetails/@item.DestinationID"><img src="@item.Image" alt="" class="img-fluid"></a>
+                                <a href="/Destination/DestinationDetails/@item.DestinationID">
+                                <img src="@item.Image" alt="" class="img-fluid"></a>
                                 <div class="info">
-                                    <h4><a href="blog-single.html">@item.City</a></h4>
+                                    <h4><a href="/Destination/DestinationDetails/@item.DestinationID">@item.City</a></h4>
                                     <p>@item.DayNight </p>
                                     <div class="dst-btm">
                                         <h6 class="">Başlayan fiyatlar </h6>
