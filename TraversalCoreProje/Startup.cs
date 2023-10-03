@@ -63,6 +63,11 @@ namespace TraversalCoreProje
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
             services.AddMvc();
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Login/SignIn/";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
